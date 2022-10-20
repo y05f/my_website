@@ -14,11 +14,11 @@ def create_app(test_config=None):
     def index():
         return render_template('index.html')
 
-    @app.route('/projects')
-    def get_projects():
+    @app.route('/projects.html', methods=['GET',])
+    def projects():
         return render_template('projects.html')
     
-    @app.route('/resume')
+    @app.route('/resume.pdf')
     def get_resume():
         with open('./my_website/static/resume.pdf','rb') as pdf_file:
             binary_pdf = BytesIO(pdf_file.read())
