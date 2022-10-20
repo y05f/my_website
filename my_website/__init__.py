@@ -16,7 +16,7 @@ def create_app(test_config=None):
 
     @app.route('/projects')
     def get_projects():
-        return render_template('/projects.html')
+        return render_template('projects.html')
     
     @app.route('/resume')
     def get_resume():
