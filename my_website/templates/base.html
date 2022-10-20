@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}{% endblock %} - Youssef Safi</title>
+        <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}/>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <div class="menu">
+                    <li><a href="{{url_for("get_projects")}}">Portfolio</a></li>
+                    <li><a href="{{url_for("get_resume")}}">Download Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
