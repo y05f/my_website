@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: my-website
-Version: 1.0.0
-Summary: my personal website built using flask
-Author: Youssef Safi
-Author-email: ysf.safi@gmail.com
-License-File: LICENSE
