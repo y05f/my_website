@@ -15,7 +15,7 @@ def create_app(test_config=None):
     # def projects():
     #     return render_template('projects.html')
 
-    @app.route('/resume.pdf')
+    @app.route('/resume.pdf')# Pdf extension is added so frozen_flask can work
     def get_resume():
         with open('./my_website/static/resume.pdf', 'rb') as pdf_file:
             binary_pdf = BytesIO(pdf_file.read())
